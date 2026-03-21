@@ -8,7 +8,7 @@ export default defineConfig({
   name: 'ateny-roztocza',
   title: 'Ateny Roztocza',
 
-  projectId: process.env.SANITY_STUDIO_PROJECT_ID || 'w2r65fb5',
+  projectId: process.env.SANITY_STUDIO_PROJECT_ID || 'w2r65fb58bab26y8',
   dataset: process.env.SANITY_STUDIO_DATASET || 'production',
 
   plugins: [
