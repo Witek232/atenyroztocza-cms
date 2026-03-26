@@ -2,25 +2,26 @@ name: Deploy Sanity Studio
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
-      - uses: actions/checkout@v4
-      
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version: '22'
-      
-      - name: Install dependencies
+          node-version: 22
+
+      - name: Install
         run: npm install
-      
-      - name: Deploy to Sanity
+
+      - name: Deploy
+        run: npx sanity deploy --no-browser
         env:
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
-        run: npx sanity deploy --no-browser): Unexpected value 'FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true'
