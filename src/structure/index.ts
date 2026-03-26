@@ -50,7 +50,7 @@ export const structure: StructureResolver = (S) =>
         .title('Wydarzenia')
         .icon(CalendarIcon)
         .child(
-          S.documentTypeList('wydarzenie')
+          S.documentTypeList('wydarzenia')
             .title('Wydarzenia')
             .defaultOrdering([{ field: 'data', direction: 'desc' }])
             .child((documentId) =>
