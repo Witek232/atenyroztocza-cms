@@ -1,7 +1,7 @@
 // Documents
 import { ustawieniaStrony } from './documents/ustawieniaStrony'
 import { nawigacja } from './documents/nawigacja'
-import { wydarzenia } from './documents/wydarzenia'
+import wydarzenie from './wydarzenia'
 import { galeria } from './documents/galeria'
 import { materialAudiowizualny } from './documents/multimedia'
 import { artykul } from './documents/artykul'
@@ -27,7 +27,7 @@ export const schemaTypes = [
   // Documents
   ustawieniaStrony,
   nawigacja,
-  wydarzenia,
+  wydarzenie,
   galeria,
   materialAudiowizualny,
   artykul,
