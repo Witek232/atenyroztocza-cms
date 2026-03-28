@@ -1,7 +1,7 @@
 // Documents
 import { ustawieniaStrony } from './documents/ustawieniaStrony'
 import { nawigacja } from './documents/nawigacja'
-import wydarzenie from './wydarzenia'
+import { wydarzenie } from './documents/wydarzenie'
 import { galeria } from './documents/galeria'
 import { materialAudiowizualny } from './documents/multimedia'
 import { artykul } from './documents/artykul'
