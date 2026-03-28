@@ -1,7 +1,7 @@
 import { defineType, defineField } from 'sanity'
 import { CalendarIcon } from '@sanity/icons'
 
-export const wydarzenia = defineType({
+export const wydarzenie = defineType({
   name: 'wydarzenie',
   title: 'Wydarzenie',
   type: 'document',
