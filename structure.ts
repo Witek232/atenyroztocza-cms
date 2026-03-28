@@ -14,7 +14,7 @@ export const structure = (S: StructureBuilder) =>
       S.divider(),
       S.documentTypeListItem('nawigacja').title('Menu nawigacji'),
       S.divider(),
-      S.documentTypeListItem('wydarzenia').title('Wydarzenia'),
+      S.documentTypeListItem('wydarzenie').title('Wydarzenia'),
       S.documentTypeListItem('galeria').title('Galeria — albumy'),
       S.documentTypeListItem('materialAudiowizualny').title('Multimedia'),
       S.documentTypeListItem('artykul').title('Artykuły prasowe'),
